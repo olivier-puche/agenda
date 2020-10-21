@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire agenda</title>
+    <link rel="stylesheet" href="agenda.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="menu">
+            <p>SAISIR ACTIVITÉ</p>
+            <div class="top_nav">
+                <a href="agenda.html">ACCÈS À L'AGENDA</a>
+            </div>
+        </section>
+    </header>
+
+    <br>
+    <section class="video"> <iframe src="https://www.youtube.com/embed/tUNaboLf4xg"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+
+    <br>
+    <main>
+        <div class="formulaire">
+            <h1>SAISIR UNE NOUVELLE ACTIVITÉ</h1>
+            <form action="agenda.html" method="post">
+
+                <section class="inner-wrap">CONNEXION
+                    <article><label id="name">Login</label>
+                        <input type="text" id="login" name="user_login" required>
+                    </article>
+                    <article>
+                        <label id="passe">Mot de passe</label>
+                        <input type="text" id="mot" name="user_mot" required>
+                    </article>
+                </section>
+                <br>
+                <section class="inner-wrap">ÉVÉNEMENT
+                    <article><label class="date">Date/heure début</label>
+                        <br><input type="date" id="date-deb" name="date-deb" required />
+                    </article>
+                    <article> <label class="date">Date/heure fin</label>
+                        <br> <input type="date" id="date-fin" name="date-fin" required />
+                    </article>
+                </section>
+
+                <br>
+                <section class="inner-wrap">PARTICIPANT
+                    <br>
+                    <article>Nom Participant
+                        <br> <input type="text" id="nomparticipant" name="nom" required />
+                    </article>
+                </section>
+
+                <br>
+                <section class="inner-wrap">PRÉSENTATION
+                    <article><label id="activite">Objet de l'événement
+                            <br> <select class="activite" name="activite" required>
+                                <option value="">Choix</option>
+                                <option value="rdv">Rendez-vous</option>
+                                <option value="repas">Réunion</option>
+                                <option value="reunion">Repas</option>
+                                <option value="yoga">Télétravail</option>
+                                <option value="sortie">Bloqué</option>
+                                <option value="sortie">Congés</option>
+                                <option value="sortie">Autres</option>
+                                <option value="sortie">Personnel</option>
+                            </select></label>
+                    </article>
+                    <article>
+                        <label for="description">Description
+                            <br> <textarea id="description" name="description"></textarea></label>
+                    </article>
+                    <article>
+                        <label for="avatar">Joindre un document</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                    </article>
+                </section>
+
+                <br>
+                <section class="button-section">
+                    <input type="submit" name="submit1" />
+                </section>
+
+            </form>
+        </div>
+    </main>
+
+    <br>
+    <footer id="footer">
+        <p class="copyright">Copyright<a href="https://www.ovh.com/fr/"> OVH</a></p>
+        <p>© 2020 La plateforme Coding School n°3 - Tous droits réservés à Olivier P</p>
+    </footer>
+</body>
+
+</html>
